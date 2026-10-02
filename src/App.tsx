@@ -61,12 +61,80 @@ const PROJECTS: Project[] = [
     status: 'live'
   },
   {
+    id: 'audiovault',
+    title: 'AudioVault // Web Audio Studio & Sound DB',
+    category: 'Áudio DSP & Database',
+    description: 'Banco de dados de áudio com sintetizador procedural Web Audio API integrado, piano virtual interativo, gerador de acordes e exportação WAV.',
+    tags: ['React', 'TypeScript', 'Web Audio API', 'DSP Synthesis', 'Tailwind CSS'],
+    liveUrl: 'https://audiovault-toadbigode.vercel.app',
+    githubUrl: 'https://github.com/davinascimento2/banco-de-dados-de-musica',
+    isFeatured: true,
+    metrics: 'Web Audio API • Polyphonic Synth • WAV Export',
+    status: 'live'
+  },
+  {
+    id: 'nodeguard',
+    title: 'NodeGuard // ESP8266 RFID Access Controller',
+    category: 'Hardware & IoT Security',
+    description: 'Painel de controle IoT em tempo real para controle de acesso RFID com ESP8266, telemetria ao vivo de sensores e audit log de segurança.',
+    tags: ['React', 'TypeScript', 'ESP8266', 'IoT Telemetry', 'Tailwind CSS'],
+    liveUrl: 'https://nodeguard-toadbigode.vercel.app',
+    githubUrl: 'https://github.com/davinascimento2/esp8266',
+    isFeatured: true,
+    metrics: 'Live Telemetry • RFID Security • Event Log',
+    status: 'live'
+  },
+  {
+    id: 'sortflow',
+    title: 'SortFlow // File Organizer & Batch Sorter',
+    category: 'Utilitários & Automação',
+    description: 'Ferramenta de organização e categorização de arquivos com regras automatizadas por extensão, tamanho e tags, gerador de scripts Shell/PowerShell e visualizador de espaço.',
+    tags: ['React', 'TypeScript', 'File System API', 'Automation', 'Tailwind CSS'],
+    liveUrl: 'https://sortflow-toadbigode.vercel.app',
+    githubUrl: 'https://github.com/davinascimento2/organizador-de-arquivos',
+    metrics: 'Script Generation • Multi-rule Categorizer',
+    status: 'live'
+  },
+  {
+    id: 'cyberchronos',
+    title: 'CyberChronos // Precision Telemetry Clock',
+    category: 'Cronometria & Telemetria',
+    description: 'Painel de precisão temporal com relógio digital UTC/Local, cronômetro de volta com telemetria, timer com sintetizador de áudio e zonas globais.',
+    tags: ['React', 'TypeScript', 'Precision Timers', 'Web Audio API', 'Tailwind CSS'],
+    liveUrl: 'https://cyberchronos-toadbigode.vercel.app',
+    githubUrl: 'https://github.com/davinascimento2/relogio-digital2',
+    metrics: 'Sub-millisecond Precision • Audio Alerts',
+    status: 'live'
+  },
+  {
+    id: 'taskcommander',
+    title: 'Task Commander // Pro Kanban & Tasks',
+    category: 'Produtividade & Engenharia',
+    description: 'Gerenciador de tarefas e quadro Kanban estilo Linear com atalhos de teclado, filtros por prioridade, persistência local e exportação JSON.',
+    tags: ['React', 'TypeScript', 'Kanban DnD', 'Linear Aesthetic', 'Tailwind CSS'],
+    liveUrl: 'https://taskcommander-toadbigode.vercel.app',
+    githubUrl: 'https://github.com/davinascimento2/simple-todo-app',
+    metrics: 'Kanban Workflow • Keyboard Driven • Local Sync',
+    status: 'live'
+  },
+  {
+    id: 'engineering-journal',
+    title: 'Engineering Journal // Technical Logs & Essays',
+    category: 'Publicações & Arquitetura',
+    description: 'Blog e caderno técnico de engenharia com artigos aprofundados sobre algoritmos de roteamento, síntese de áudio Web Audio e arquitetura de sistemas.',
+    tags: ['React', 'TypeScript', 'Markdown', 'Systems Engineering', 'Tailwind CSS'],
+    liveUrl: 'https://blog-toadbigode.vercel.app',
+    githubUrl: 'https://github.com/davinascimento2/blogPessoalReact',
+    metrics: 'Technical Case Studies • Code Snippets',
+    status: 'live'
+  },
+  {
     id: 'easy-study',
     title: 'EasyStudy // Hub de Aprendizado & Foco',
     category: 'Educação & Produtividade',
     description: 'Plataforma inteligente de estudos com flashcards com repetição espaçada, cronômetro Pomodoro, quiz interativo e síntese de resumos.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'LocalStorage API'],
-    liveUrl: 'https://easy-study-davinascimento2.vercel.app',
+    liveUrl: 'https://easystudy-toadbigode.vercel.app',
     githubUrl: 'https://github.com/davinascimento2/easy-study',
     metrics: 'Spaced Repetition • Pomodoro Engine • Quiz Mode',
     status: 'live'
@@ -77,7 +145,7 @@ const PROJECTS: Project[] = [
     category: 'IA Generativa & Games',
     description: 'Motor de histórias e RPG interativo que gera ramificações narrativas em tempo real adaptadas às decisões do jogador.',
     tags: ['React', 'TypeScript', 'Prompt Engineering', 'Generative Narrative'],
-    liveUrl: 'https://storyweaver-davinascimento2.vercel.app',
+    liveUrl: 'https://storyweaver-toadbigode.vercel.app',
     githubUrl: 'https://github.com/davinascimento2/storyweaver',
     metrics: 'Branching Storylines • Dynamic Quests',
     status: 'live'
@@ -88,20 +156,10 @@ const PROJECTS: Project[] = [
     category: 'Web Social & Memórias',
     description: 'Cápsula do tempo digital onde mensagens, memórias e arquivos são trancados e liberados apenas em datas programadas no futuro.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Cryptographic Vault'],
-    liveUrl: 'https://social-time-capsule-davinascimento2.vercel.app',
+    liveUrl: 'https://socialtimecapsule-toadbigode.vercel.app',
     githubUrl: 'https://github.com/davinascimento2/social-time-capsule',
     metrics: 'Scheduled Unlock • Media Vault',
     status: 'live'
-  },
-  {
-    id: 'esp8266',
-    title: 'ESP8266 IoT Telemetry Studio',
-    category: 'Hardware & IoT',
-    description: 'Dashboard interativo para simulação e monitoramento de dispositivos IoT e microcontroladores ESP8266 com stream de telemetria.',
-    tags: ['JavaScript', 'IoT', 'MQTT Protocol', 'WebSocket'],
-    githubUrl: 'https://github.com/davinascimento2/esp8266',
-    metrics: 'Live Dials • Sensor Stream',
-    status: 'maintained'
   }
 ];
 
@@ -134,11 +192,18 @@ export function App() {
         break;
       case 'projects':
         newLogs.push(
-          'PROJETOS EM DESTAQUE:',
-          '  1. NetWatch -> https://netwatch-toadbigode.vercel.app',
-          '  2. Ayrton Senna Museum -> https://sennamuseum.vercel.app',
-          '  3. EasyStudy -> https://github.com/davinascimento2/easy-study',
-          '  4. StoryWeaver -> https://github.com/davinascimento2/storyweaver'
+          'PROJETOS EM PRODUÇÃO:',
+          '  1. NetWatch           -> https://netwatch-toadbigode.vercel.app',
+          '  2. Ayrton Senna Museum-> https://sennamuseum.vercel.app',
+          '  3. AudioVault Studio  -> https://audiovault-toadbigode.vercel.app',
+          '  4. NodeGuard IoT      -> https://nodeguard-toadbigode.vercel.app',
+          '  5. SortFlow Sorter    -> https://sortflow-toadbigode.vercel.app',
+          '  6. CyberChronos Clock -> https://cyberchronos-toadbigode.vercel.app',
+          '  7. Task Commander     -> https://taskcommander-toadbigode.vercel.app',
+          '  8. Engineering Journal-> https://blog-toadbigode.vercel.app',
+          '  9. EasyStudy Hub      -> https://easystudy-toadbigode.vercel.app',
+          '  10. StoryWeaver Engine-> https://storyweaver-toadbigode.vercel.app',
+          '  11. Time Capsule Vault-> https://socialtimecapsule-toadbigode.vercel.app'
         );
         break;
       case 'skills':
